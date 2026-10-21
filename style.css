@@ -1,9 +1,45 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     width: 100%;
     min-height: 100vh;
+}
+
+header {
+    min-height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagee{
+    width: 40em;
+    height: 40em;
+    background-color: aquamarine;
+}
+.about{
+    width: 45em;
+    height: 30em;
+    background-color: rgb(4, 34, 24);
+}
+@media(max-width : 600px){
+    header{
+        flex-direction : column;
+    }
+    .imagee{
+        margin: 10rem 10rem;
+    }
+}
+main {
+    min-height: 200vh;
+    background-color: crimson;
+}
+
+footer {
+    min-height: 100vh;
+    background-color: antiquewhite;
 }
